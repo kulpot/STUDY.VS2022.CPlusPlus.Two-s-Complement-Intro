@@ -130,7 +130,9 @@
     <ClCompile Include="Mainer.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="MyAssembly.asm" />
+    <CustomBuild Include="MyAssembly.asm">
+      <FileType>Document</FileType>
+    </CustomBuild>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
