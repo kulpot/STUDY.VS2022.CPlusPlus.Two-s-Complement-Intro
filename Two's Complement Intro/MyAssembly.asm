@@ -385,6 +385,53 @@ doit proc			; proc -- procedure
 	; ------------------------------------- Two's Complement Intro ------------------------------------------------
 	; ref link:https://www.youtube.com/watch?v=dEWhsCA-4V8&list=PLRwVmtr-pp06-8kzgl6j-hp7JSd829ro2&index=25
 
+	;	Signed (-)
+	; Rule 1 - Check if left most bit is set
+	; Rule 2 - If not, interpret value as always (positive)
+	; Rule 3 - Else, flip the remaining bits (ones complement)
+	; Rule 4 - Add one to the flipped bits (inverted bits)
+	; Rule 5 - Interpret the resulting value as negative
+
+	;	Binary	|	Decimal(signed)	 |	Decimal(unsigned)|	Decimal(proper signed)	
+	;	 000	|	 0				 |	0				 |	 0				
+	;	 001	|	 1				 |	1				 |	 1				
+	;	 010	|	 2				 |	2				 |	 2				
+	;	 011	|	 3				 |	3				 |	 3				
+	;	 100	|	-0   ?			 |	4				 |	-4   			
+	;	 101	|	-1				 |	5				 |	-3				
+	;	 110	|	-2				 |	6				 |	-2				
+	;	 111	|	-3				 |	7				 |	-1	
+	
+	; Signed formula
+	; 1 0 1  ?
+	; 1[0 1] -> negative one [flip value here then add one]
+
+	;  10
+	; + 1
+	; ----
+	;  11	2+1=[3]  
+	; 1 0 1 = -3 signed decimal
+
+	; 1 1 0 1 ?
+	; 1[1 0 1]
+
+	;  0 1 0
+	; +    1
+	; -------
+	;  0 1 1	2+1=3
+	; 1 1 0 1 = -1
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
