@@ -136,6 +136,8 @@
       <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Assembling code.....................</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">ml /c /Cx /coff "%(FullPath)"</Command>
       <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Assembling code.....................</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(Filename).obj</Outputs>
     </CustomBuild>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
