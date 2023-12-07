@@ -132,6 +132,10 @@
   <ItemGroup>
     <CustomBuild Include="MyAssembly.asm">
       <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">ml /c /Cx /coff "%(FullPath)"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Assembling code.....................</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">ml /c /Cx /coff "%(FullPath)"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Assembling code.....................</Message>
     </CustomBuild>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
