@@ -382,6 +382,14 @@ doit proc			; proc -- procedure
 	;				  total
 	; 1 1 1 0 0 0 0 1
 
+	; ------------------------------------- Two's Complement Intro ------------------------------------------------
+	; ref link:https://www.youtube.com/watch?v=dEWhsCA-4V8&list=PLRwVmtr-pp06-8kzgl6j-hp7JSd829ro2&index=25
+
+
+
+
+
+
 
 
 
